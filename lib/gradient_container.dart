@@ -8,22 +8,24 @@ const  endAlignment = Alignment.bottomRight; //final is a keyword that is used t
 class GradientContainer extends StatelessWidget {
 //statelessWidget is a widget that doesn't change over time
 
-  const GradientContainer({super.key});
+  const GradientContainer(this.colors,{super.key});
+
+  final List<Color> colors;
 
   @override
   Widget build(context) {
     return Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(colors:
             [
-              Colors.purple, 
-              Colors.blue
+              colors[0],
+              colors[1],
             ],
             begin: startAlignment,
             end: endAlignment,
             )
         ),
-          child: const StyledText("i am MIKE DURAN!"),
+          child: const StyledText("i am MIKE The god !"),
         );
   }
 }
