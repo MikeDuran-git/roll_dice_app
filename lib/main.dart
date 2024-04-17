@@ -12,7 +12,7 @@ void main() {
   runApp(
     const MaterialApp(
        home: Scaffold(
-        body: GradientContainer(colors)
+        body: GradientContainer.purple()
       )
     ) 
   );
